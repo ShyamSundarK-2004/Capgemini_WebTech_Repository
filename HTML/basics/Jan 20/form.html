@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center> <!--depricated tag (not in use)  -->
+        <form style="width: 400px; height: 500px;">
+            <fieldset>
+                <legend>Student Details</legend>
+                <!-- name section -->
+                <section>
+                    <label for="name">Name : </label>
+                    <input type="text" id="name" name="Name" required>
+                </section>
+                <br>
+                <!--email-id section  -->
+                <section>
+                    <label for="email-id">Email-id : </label>
+                    <input type="email" id="email-id" name="email-id" required>
+                </section>
+                <br>
+                <!--gender section using radio button -->
+                <section>
+                    <label for="gender">Select your gender : </label><br>
+                    <input type="radio" id="male" name="gender" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" required>
+                    <label for="female">female</label>
+                    <input type="radio" id="others" name="gender" required>
+                    <label for="others">Others</label>
+                </section>
+                <br>
+                <!-- skills section checkbox -->
+                <section>
+                    <label for="skills">Select your skills : </label><br>
+                    <input type="checkbox" id="java" name="java" checked>
+                    <label for="java">Java</label>
+                    <input type="checkbox" id="html" name="html">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="css">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="js" name="js">
+                    <label for="js">JS</label>
+                </section>
+                <br>
+                <!-- file attach -->
+                <section>
+                    <label for="resume">Attach your Resume :</label>
+                    <input type="file" required>
+                </section>
+                <br>
+                <!-- country dropdown options  -->
+                <section>
+                    <label for="country">Select your country :</label>
+                    <select name="country" id=" country" name="country     ">
+                        <option selected disabled>Select</option>
+                        <option value="India">India</option>
+                        <option value="china">China</option>
+                        <option value="uae">UAE</option>
+                        <option value="usa">USA</option>
+                        <option value="france">France</option>
+                    </select>
+                </section>
+                <br>
+                <!-- date section -->
+                <section>
+                    <label for="date">Select your DOB :</label>
+                    <input type="date" required>
+                </section>
+                <br>
+                <!-- age section -->
+                <section>
+                    <label for="age">Select your age :</label>
+                    <input type="range" required>
+                </section>
+                <br>
+                <!-- address textarea  -->
+                <section>
+                    <label for="address">Address :</label>
+                    <textarea name="address" id="address"></textarea>
+                </section>
+                <br>
+                <!-- phone number section -->
+                <section>
+                    <label for="ph-no">Phone number :</label>
+                    <input type="tel" id="ph-no" minlength="10" maxlength="10" required>
+                </section>
+                <br>
+                <!-- password section -->
+                <section><label for="password">Password : </label>
+                    <input type="password" id="password" vrequired>
+                </section>
+                <br>
+                <!-- submit button  -->
+                <button>Submit</button>
+                <input type="reset">
+            </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>
