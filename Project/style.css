@@ -1,0 +1,70 @@
+body {
+    font-family: Arial;
+    background-color: #f4f4f4;
+}
+
+#mainHeader {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.nav-item {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.nav-item.active {
+    font-weight: bold;
+}
+
+.form-section {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.input-field {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.btn {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: green;
+    color: white;
+}
+
+.secondary-btn {
+    background-color: red;
+    color: white;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+.product-card.featured {
+    border: 2px solid gold;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid black;
+    padding: 8px;
+}

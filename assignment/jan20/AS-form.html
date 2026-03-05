@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="AS-style.css">
+</head>
+
+<body>
+
+    <center>
+        <form style="height: 500px; width: 600px;">
+            <fieldset>
+                <h2>Student Registration Form</h2>
+                <table>
+
+                    <tr>
+                        <td><label for="rollno">Roll no. :</label></td>
+                        <td><input type="text" id="rollno" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="fname">Student name :</label></td>
+                        <td>
+                            <input type="text" id="fname" placeholder="First Name" required>
+
+                            <input type="text" id="lname" placeholder="Last Name" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="fathername">Father's name :</label></td>
+                        <td><input type="text" id="fathername" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Date of birth :</label></td>
+                        <td>
+                            <input type="text" id="day" placeholder="Day" class="small" required>
+
+                            <input type="text" id="month" placeholder="Month" class="small" required>
+
+                            <input type="text" id="year" placeholder="Year" class="small" required>
+                            (DD-MM-YYYY)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="mobile">Mobile no. :</label></td>
+                        <td>
+                            <input type="text" value="+91" class="small" readonly>
+                            <input type="tel" id="mobile" required minlength="10" maxlength="10">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email id :</label></td>
+                        <td><input type="email" id="email" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="password">Password :</label></td>
+                        <td><input type="password" id="password" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Gender :</label></td>
+                        <td>
+                            <input type="radio" id="male" name="gender" required>
+                            <label for="male">Male</label>
+
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Department :</label></td>
+                        <td>
+                            <input type="checkbox" id="cse">
+                            <label for="cse">CSE</label>
+
+                            <input type="checkbox" id="it">
+                            <label for="it">IT</label>
+
+                            <input type="checkbox" id="ece">
+                            <label for="ece">ECE</label>
+
+                            <input type="checkbox" id="civil">
+                            <label for="civil">Civil</label>
+
+                            <input type="checkbox" id="mech">
+                            <label for="mech">Mech</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="course">Course :</label></td>
+                        <td>
+                            <select id="course" required style="width: 100%;text-align: center;">
+                                <option value="" selected disabled>Select Current Course</option>
+                                <option value="Frontend">Frontend</option>
+                                <option value="Backend">Backend</option>
+                                <option value="Full Stack">Full Stack</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="photo">Student photo :</label></td>
+                        <td><input type="file" id="photo" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="city">City :</label></td>
+                        <td><input type="text" id="city" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="address">Address :</label></td>
+                        <td><textarea id="address" rows="4" cols="30" required></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button>Submit</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </fieldset>
+        </form>
+    </center>
+
+</body>
+
+</html>

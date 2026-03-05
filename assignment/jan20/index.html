@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2 class="top-title">Student Profile</h2>
+
+    <p>
+        <a href="#">Info</a> |
+        <a href="#">Skills</a> |
+        <a href="#">Register</a>
+    </p>
+
+    <hr>
+
+    <h3>About Student</h3>
+
+    <p><b>Profile Photo</b></p>
+    <img src="../../HTML/assets/profile.png" alt="Profile Photo" width="100">
+
+    <p><b>Name:</b> Shyam Sundar K</p>
+    <p><b>Course:</b> JAVA Development</p>
+    <p>Learning Core Java & Advanced java with proper structure and usage.</p>
+    <p><b>Address:</b> Mumbai, India</p>
+
+    <hr>
+
+    <h3>Academic Details</h3>
+
+    <table border="1">
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>java basics</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>Core java</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Advanced java</td>
+            <td>88</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Skills & Links</h3>
+
+    <h4>Technical Skills (Ordered List)</h4>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>java basics</li>
+        <li>Core java</li>
+        <li>Advanced java</li>
+    </ol>
+
+    <h4>Useful Resources (Unordered List with Links)</h4>
+    <ul>
+        <li><a href="https://developer.mozilla.org">MDN Docs</a></li>
+        <li><a href="https://www.w3schools.com">W3Schools</a></li>
+    </ul>
+
+    <hr>
+
+    <h3>Clickable Image</h3>
+    <a href="https://www.google.com">
+        <img src="../../HTML/assets/google.jpeg" alt="Google" width="120">
+    </a>
+
+    <hr>
+
+    <h3>Embedded Page</h3>
+    <iframe src="https://wikipedia.com" width="300" height="200"></iframe>
+
+    <hr>
+
+    <h3>Media</h3>
+    <audio controls>
+        <source src="../../HTML/assets/SoundTrackm4a.m4a">
+    </audio>
+
+    <br><br>
+
+    <video width="300" controls>
+        <source src="../../HTML/assets/videoTeack.mp4">
+    </video>
+
+    <hr>
+
+    <h3>Student Registration Form</h3>
+
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+
+            Full Name:
+            <input type="text" placeholder="Enter full name"><br><br>
+
+            Email:
+            <input type="email"><br><br>
+
+            Password:
+            <input type="password"><br><br>
+
+            Date of Birth:
+            <input type="date"><br><br>
+
+            Age:
+            <input type="number"><br><br>
+
+            Self Rating:
+            <input type="range"><br><br>
+
+            Upload Resume:
+            <input type="file"><br><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Additional Details</legend>
+
+            Gender:<br>
+            <input type="radio" name="gender"> Male<br>
+            <input type="radio" name="gender"> Female<br><br>
+
+            Skills:<br>
+            <input type="checkbox"> HTML<br>
+            <input type="checkbox"> CSS<br>
+            <input type="checkbox"> JavaScript<br><br>
+
+            Course:
+            <select>
+                <option value="" disabled selected>Select</option>
+                <option>Frontend</option>
+                <option>Backend</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+
+    <br>
+    <p>All rights reserved &copy 2026</p>
+
+</body>
+
+</html>

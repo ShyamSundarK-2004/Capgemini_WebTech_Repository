@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    margin: auto;
+}
+
+fieldset {
+    background-color: burlywood;
+}
+
+td {
+    padding: 8px;
+}
+
+input,
+select,
+textarea {
+    padding: 4px;
+}
+
+.small {
+    width: 60px;
+}

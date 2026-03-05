@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Automation Wiki Portal</title>
+
+    <style>
+        /* Global */
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #f6f6f6;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0645ad;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navbar */
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            margin-right: 15px;
+            font-size: 14px;
+        }
+
+        /* Layout */
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 20%;
+            padding: 15px;
+            background: #ffffff;
+            border: 1px solid #ddd;
+        }
+
+        .sidebar h3 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        /* Main Content */
+        .content {
+            width: 60%;
+            margin: 0 20px;
+            background: #ffffff;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        /* Infobox */
+        .infobox {
+            width: 18%;
+            background: #ffffff;
+            padding: 10px;
+            border: 1px solid #aaa;
+            font-size: 14px;
+        }
+
+        /* Sections */
+        h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #aaa;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Form Styling */
+        form {
+            margin-top: 15px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #aaa;
+        }
+
+        button {
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #3366cc;
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: #999;
+            color: white;
+        }
+
+        .alert {
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #2196F3;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <h1 id="siteLogo">Automation Wiki</h1>
+            <div class="nav-links">
+                <a href="#introduction" id="navIntro">Introduction</a>
+                <a href="#history" id="navHistory">History</a>
+                <a href="#tools" id="navTools">Tools</a>
+                <a href="#registration" id="navRegister">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Contents</h3>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#tools">Automation Tools</a></li>
+                <li><a href="#registration">Registration Form</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>
+                    Automation testing is a software testing technique that uses
+                    automated tools to execute test cases. It improves efficiency,
+                    reduces manual effort, and increases test coverage.
+                </p>
+
+                <div class="alert" id="infoAlert">
+                    This is a static informational alert message.
+                </div>
+            </section>
+
+            <section id="history">
+                <h2>History</h2>
+                <p>
+                    Automation tools evolved from basic script-based frameworks
+                    to advanced WebDriver-based tools supporting cross-browser testing.
+                </p>
+
+                <table id="historyTable">
+                    <tr>
+                        <th>Year</th>
+                        <th>Event</th>
+                    </tr>
+                    <tr>
+                        <td>2004</td>
+                        <td>Selenium IDE Introduced</td>
+                    </tr>
+                    <tr>
+                        <td>2006</td>
+                        <td>Selenium WebDriver Created</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="tools">
+                <h2>Popular Automation Tools</h2>
+                <ul>
+                    <li class="toolItem">Selenium</li>
+                    <li class="toolItem">Cypress</li>
+                    <li class="toolItem">Playwright</li>
+                </ul>
+            </section>
+
+            <section id="registration">
+                <h2>Registration Form</h2>
+
+                <form id="registrationForm">
+
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+
+                    <input type="email" id="email" name="email" placeholder="Email">
+
+                    <input type="password" id="password" name="password" placeholder="Password">
+
+                    <input type="date" id="dob" name="dob">
+
+                    <select id="experience" name="experience">
+                        <option value="">Select Experience Level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+
+                    <label>
+                        <input type="radio" name="mode" value="online" id="modeOnline">
+                        Online
+                    </label>
+
+                    <label>
+                        <input type="radio" name="mode" value="offline" id="modeOffline">
+                        Offline
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="termsCheck" name="terms">
+                        Accept Terms
+                    </label>
+
+                    <textarea id="comments" name="comments" placeholder="Additional Comments"></textarea>
+
+                    <button type="submit" id="submitBtn" class="btn-primary">
+                        Submit
+                    </button>
+
+                    <button type="reset" id="resetBtn" class="btn-secondary">
+                        Reset
+                    </button>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <!-- Infobox -->
+        <aside class="infobox">
+            <h3>Automation Info</h3>
+            <p><strong>Field:</strong> Software Testing</p>
+            <p><strong>Language:</strong> Java</p>
+            <p><strong>Tool:</strong> Selenium</p>
+            <p><strong>Framework:</strong> TestNG</p>
+        </aside>
+
+    </div>
+
+</body>
+
+</html>
